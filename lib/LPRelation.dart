@@ -46,7 +46,7 @@ class LPRelation extends StatelessWidget {
                 onTap: (){
                   Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Relation()));
                 },
-                child: container(context, Icons.collections_bookmark, "learn"),
+                child: container(context, Icons.collections_bookmark, "Learn"),
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width*0.12,
@@ -55,7 +55,7 @@ class LPRelation extends StatelessWidget {
                 onTap: (){
                   Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>PlayRelation()));
                 },
-                child: container(context, Icons.play_arrow, " play "),
+                child: container(context, Icons.play_arrow, " Play "),
               ),
             ],
           )

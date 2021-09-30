@@ -50,7 +50,7 @@ class LPexp extends StatelessWidget {
                     onTap: (){
                       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Learnexp()));
                     },
-                    child: container(context, Icons.collections_bookmark, "learn"),
+                    child: container(context, Icons.collections_bookmark, "Learn"),
                   ),
                   SizedBox(
                     width: MediaQuery.of(context).size.width*0.12,
@@ -59,7 +59,7 @@ class LPexp extends StatelessWidget {
                     onTap: (){
                       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Playexp()));
                     },
-                    child: container(context, Icons.play_arrow, " play "),
+                    child: container(context, Icons.play_arrow, " Play "),
                   ),
                 ],
               )

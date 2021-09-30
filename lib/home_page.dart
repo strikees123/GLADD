@@ -5,11 +5,11 @@ import 'package:gladd/LPAnimals.dart';
 import 'package:gladd/LPExp.dart';
 import 'package:gladd/LPRelation.dart';
 import 'package:gladd/LPSent.dart';
-import 'package:gladd/LPWordHard.dart';
-import 'package:gladd/LPWordsEasy.dart';
 import 'package:gladd/LPalpha.dart';
 import 'package:gladd/LPcolor.dart';
 import 'package:gladd/LPnum.dart';
+import 'package:gladd/floatingActionButton.dart';
+import 'package:gladd/wordCommon.dart';
 import 'package:vertical_card_pager/vertical_card_pager.dart';
 
 class Homepage extends StatefulWidget {
@@ -19,7 +19,6 @@ class Homepage extends StatefulWidget {
 
 class _HomepageState extends State<Homepage> {
    final List<String> titles = [
-     "",
      "",
      "",
      "",
@@ -100,15 +99,6 @@ class _HomepageState extends State<Homepage> {
       ),
       Container(
         decoration: BoxDecoration(
-         image: DecorationImage(
-           image: AssetImage("assets/home/hard.jpg"),
-           fit: BoxFit.fill
-         ),
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-        ),
-      ),
-      Container(
-        decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage("assets/home/sentenceHome.jpg"),
           fit: BoxFit.fill,
@@ -124,8 +114,7 @@ class _HomepageState extends State<Homepage> {
       LPColor(),
       LPRelation(),
       LPexp(),
-      LPWordEasy(),
-      LPWordHard(),
+      WordCommon(),
       LPSent(),
     ];
     return Scaffold(
