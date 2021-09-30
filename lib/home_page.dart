@@ -1,5 +1,6 @@
 // @dart=2.9
 import 'dart:ui';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gladd/LPAnimals.dart';
 import 'package:gladd/LPExp.dart';
@@ -8,7 +9,6 @@ import 'package:gladd/LPSent.dart';
 import 'package:gladd/LPalpha.dart';
 import 'package:gladd/LPcolor.dart';
 import 'package:gladd/LPnum.dart';
-import 'package:gladd/floatingActionButton.dart';
 import 'package:gladd/wordCommon.dart';
 import 'package:vertical_card_pager/vertical_card_pager.dart';
 
@@ -31,19 +31,21 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     final List<Widget> image = [
+      ///alphabet
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/home/alphabetss.jpg"),
+            image: AssetImage("assets/finalHome/ABC1.png"),
             fit: BoxFit.fill,
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),
       ),
+      ///number
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/homepage/Numbers.JPG"),
+            image: AssetImage("assets/finalHome/NUmbers1.gif"),
             fit: BoxFit.fill
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -52,7 +54,29 @@ class _HomepageState extends State<Homepage> {
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/homepage/Animals.JPG"),
+              image: AssetImage("assets/finalHome/animaluse.gif"),
+              fit: BoxFit.fill
+          ),
+          borderRadius: BorderRadius.all(Radius.circular(20)),
+        ),
+      ),
+      Container(
+        height:  250,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(20)),
+        ),
+        child: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/finalHome/colours2.gif"),
+            ),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("assets/finalHome/family3.gif"),
               fit: BoxFit.fill
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -61,25 +85,7 @@ class _HomepageState extends State<Homepage> {
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/homepage/Color.JPG"),
-              fit: BoxFit.fill
-          ),
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-        ),
-      ),
-      Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("assets/homepage/family.JPG"),
-              fit: BoxFit.fill
-          ),
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-        ),
-      ),
-      Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("assets/homepage/Expressions.JPG"),
+              image: AssetImage("assets/finalHome/emoji_2.gif"),
               fit: BoxFit.fill
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -90,8 +96,8 @@ class _HomepageState extends State<Homepage> {
         child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/home/text.gif"),
-                fit: BoxFit.fitWidth
+                image: AssetImage("assets/finalHome/Words1.gif"),
+                fit: BoxFit.fill
             ),
             borderRadius: BorderRadius.all(Radius.circular(20)),
           ),
@@ -100,7 +106,7 @@ class _HomepageState extends State<Homepage> {
       Container(
         decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("assets/home/sentenceHome.jpg"),
+          image: AssetImage("assets/finalHome/SentenceOrAlpha.gif"),
           fit: BoxFit.fill,
         ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -118,6 +124,11 @@ class _HomepageState extends State<Homepage> {
       LPSent(),
     ];
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: Text("Select the Category",style: TextStyle(color: Colors.black,fontStyle: FontStyle.italic)),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),

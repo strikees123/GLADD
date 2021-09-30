@@ -23,9 +23,10 @@ class LPalpha extends StatelessWidget {
           )
         ),
         Container(
-          height: MediaQuery.of(context).size.width * 0.6,
+          height: MediaQuery.of(context).size.height * 0.2,
           child: Image.asset(
-            "assets/QU3u.gif",
+            "assets/finalHome/ABC_Homw.gif",
+            fit: BoxFit.fill,
           ),
         ),
         Row(

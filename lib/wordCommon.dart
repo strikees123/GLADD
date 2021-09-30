@@ -18,14 +18,11 @@ class _WordCommonState extends State<WordCommon> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text(
-                "WORDS",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-              ),
+
               Container(
                 //color: Colors.pink,
-                width: MediaQuery.of(context).size.width/1.2,
-                height: MediaQuery.of(context).size.height*0.4,
+                width: MediaQuery.of(context).size.width/1.0,
+                height: MediaQuery.of(context).size.height*0.5,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage("assets/home/WOrds.gif"),
