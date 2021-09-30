@@ -10,6 +10,7 @@ import 'package:gladd/LPalpha.dart';
 import 'package:gladd/LPcolor.dart';
 import 'package:gladd/LPnum.dart';
 import 'package:gladd/wordCommon.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:vertical_card_pager/vertical_card_pager.dart';
 
 class Homepage extends StatefulWidget {
@@ -30,7 +31,7 @@ class _HomepageState extends State<Homepage> {
    ];
   @override
   Widget build(BuildContext context) {
-    final List<Widget> image = [
+     List<Widget> image = [
       ///alphabet
       Container(
         decoration: BoxDecoration(
@@ -45,7 +46,7 @@ class _HomepageState extends State<Homepage> {
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/finalHome/NUmbers1.gif"),
+            image: AssetImage("assets/finalFinal/numbers_outt.gif"),
             fit: BoxFit.fill
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -68,7 +69,7 @@ class _HomepageState extends State<Homepage> {
         child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/finalHome/colours2.gif"),
+                image: AssetImage("assets/finalFinal/colours_outt.gif"),
             ),
           ),
         ),
@@ -127,28 +128,30 @@ class _HomepageState extends State<Homepage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,
-        title: Text("Select the Category",style: TextStyle(color: Colors.black,fontStyle: FontStyle.italic)),
+        title: Text("Select the Category",style:GoogleFonts.architectsDaughter(textStyle: TextStyle(fontWeight: FontWeight.bold),color: Colors.black)),
       ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Container(
             child: Container(
-              child: VerticalCardPager(
-                align: ALIGN.CENTER,
-                textStyle: TextStyle(color: Colors.white),
-                titles: titles,
-                images: image,
-                initialPage: 0,
-                onSelectedItem: (index){
-                  setState(() {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context)=>classes.elementAt(index))
-                    );
-                  });
-                },
-                onPageChanged: (page){
-                },
+              child: Container(
+                child: VerticalCardPager(
+                  align: ALIGN.CENTER,
+                  textStyle: TextStyle(color: Colors.white),
+                  titles: titles,
+                  images: image,
+                  initialPage: 0,
+                  onSelectedItem: (index){
+                    setState(() {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context)=>classes.elementAt(index))
+                      );
+                    });
+                  },
+                  onPageChanged: (page){
+                  },
+                ),
               ),
             ),
           ),
