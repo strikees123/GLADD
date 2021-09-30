@@ -26,8 +26,8 @@ class _HomepageState extends State<Homepage> {
      "",
      "",
      "",
-     "Hard Words",
-     "Sentence",
+     "",
+     "",
    ];
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class _HomepageState extends State<Homepage> {
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/home/alp.jpg"),
+            image: AssetImage("assets/home/alphabetss.jpg"),
             fit: BoxFit.fill,
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -44,7 +44,7 @@ class _HomepageState extends State<Homepage> {
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/home/number.jpg"),
+            image: AssetImage("assets/homepage/Numbers.JPG"),
             fit: BoxFit.fill
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -87,32 +87,31 @@ class _HomepageState extends State<Homepage> {
         ),
       ),
       Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("assets/home/easy.png"),
-              fit: BoxFit.fill
+        padding: EdgeInsets.all(20),
+        child: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/home/text.gif"),
+                fit: BoxFit.fitWidth
+            ),
+            borderRadius: BorderRadius.all(Radius.circular(20)),
           ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+         image: DecorationImage(
+           image: AssetImage("assets/home/hard.jpg"),
+           fit: BoxFit.fill
+         ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),
       ),
       Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [
-                Colors.redAccent,
-                Colors.blueAccent,
-              ]
-          ),
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-        ),
-      ),
-      Container(
-        decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            Colors.redAccent,
-            Colors.blueAccent,
-          ]
+        image: DecorationImage(
+          image: AssetImage("assets/home/sentenceHome.jpg"),
+          fit: BoxFit.fill,
         ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),
