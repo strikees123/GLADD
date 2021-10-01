@@ -36,7 +36,7 @@ class _HomepageState extends State<Homepage> {
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/finalHome/ABC1.png"),
+            image: AssetImage("assets/finalFinal/ALPHA_OUT.jpg"),
             fit: BoxFit.fill,
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -55,7 +55,7 @@ class _HomepageState extends State<Homepage> {
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/finalHome/animaluse.gif"),
+              image: AssetImage("assets/finalFinal/output-onlinegiftools.gif"),
               fit: BoxFit.fill
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -77,7 +77,7 @@ class _HomepageState extends State<Homepage> {
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/finalHome/family3.gif"),
+              image: AssetImage("assets/finalFinal/output-onlinegiftools (1).gif"),
               fit: BoxFit.fill
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -97,7 +97,7 @@ class _HomepageState extends State<Homepage> {
         child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/finalHome/Words1.gif"),
+                image: AssetImage("assets/finalFinal/output-onlinegiftools (2).gif"),
                 fit: BoxFit.fill
             ),
             borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -107,7 +107,7 @@ class _HomepageState extends State<Homepage> {
       Container(
         decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("assets/finalHome/SentenceOrAlpha.gif"),
+          image: AssetImage("assets/finalFinal/sentences_out.gif"),
           fit: BoxFit.fill,
         ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
